@@ -38,7 +38,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 
                 if let JSON = response.result.value {
                     self.magazines  = JSON["magazines"] as! NSArray
-                 
                     //self.magobject .setValue("String", forKey: "image")
                     //print(self.magobject.valueForKey("image"))
                     self.collectionView.reloadData()
